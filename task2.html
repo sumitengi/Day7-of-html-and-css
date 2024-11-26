@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 500px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .main{
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            font-size: 50px;
+            border: 2px solid black;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .main:hover{
+            transform: rotatez(60deg);
+            transform-origin: top left;
+        }
+        .box{
+            width: 180px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: aqua;
+            font-size: 25px;
+            text-align: center;
+            position: fixed;
+            top: 77px;
+            right: -75px;
+            transform: rotateZ(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Join us now</div>
+    <h1>Practice of transform rotate</h1>
+    <div class="main">Hello</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 500px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .main{
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            font-size: 50px;
+            box-shadow: 0px 0px 2px 0px gray;
+            margin: auto;
+            position: relative;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: 0.5s;
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+        .image:nth-child(2){
+            transform-origin: top left;
+        }
+        .main:hover .image:nth-child(2){
+            transform: rotatez(70deg);
+        }
+        .image:last-child{
+            transform-origin: top right;
+        }
+        .main:hover .image:last-child{
+            transform: rotatez(-70deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of transform see effect on hover</h1>
+    <div class="main">
+        <div class="image">
+            <img src="img/image1.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="img/image4.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="img/image5.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
